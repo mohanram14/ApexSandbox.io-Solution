@@ -1,14 +1,18 @@
 public Integer rockPaperScissors(String player1, String player2) {
-    if (player1.equals(player2)) return 0;
+    if (player1 == player2) return 0;
 
-    switch (player1) {
-        case "rock":
-            return player2.equals("scissors") ? 1 : 2;
-        case "paper":
-            return player2.equals("rock") ? 1 : 2;
-        case "scissors":
-            return player2.equals("paper") ? 1 : 2;
-        default:
+    switch on player1 {
+        when 'rock' {
+            return player2 == 'scissors' ? 1 : 2;
+        }
+        when 'paper' {
+            return player2 == 'rock' ? 1 : 2;
+        }
+        when 'scissors' {
+            return player2 == 'paper' ? 1 : 2;
+        }
+        when else {
             return null;
+        }
     }
 }
