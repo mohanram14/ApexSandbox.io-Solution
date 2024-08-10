@@ -5,6 +5,7 @@ public Integer nextPrime(Integer num) {
         return num + 1;
     }
     nextPrime(num + 1);
+    return null
 }
 
 public Boolean isPrime(Integer num) {
