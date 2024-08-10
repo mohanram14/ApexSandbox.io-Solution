@@ -2,7 +2,7 @@ public Boolean isPrime(Integer num) {
     if(num == 2 || num == 3) return true;
     if(num < 2 || math.mod(num, 2) == 0) return false;
     for(Integer i = 2; i <= (num/2); i++ ) {
-        if(math.mod(num, i) == o) return false;
+        if(math.mod(num, i) == 0) return false;
     }
     return true;
 }
