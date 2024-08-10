@@ -6,7 +6,7 @@ public Integer rockPaperScissors(String player1, String player2) {
     if(b == 'rock' && a == 'paper') return 1;
     if(a == 'rock' && b == 'scissors') return 1;
     if(b == 'rock' && a == 'scissors') return 2;
-    if(a == 'paper' && b == 'scissors') return 1;
-    if(b == 'scissors' && a == 'paper') return 2;
+    if(a == 'scissors' && b == 'paper') return 1;
+    if(a == 'paper' && b == 'scissors') return 2;
     return null;
 }
