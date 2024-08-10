@@ -1,0 +1,6 @@
+public Boolean isPrime(Integer num) {
+    for(Integer i = 0; i <= (nums/2); i++ ) {
+        if(math.mod(nums, i) == o) return false;
+    }
+    return true;
+}
