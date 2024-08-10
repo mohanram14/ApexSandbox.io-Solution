@@ -1,4 +1,6 @@
 public Integer nextPrime(Integer num) {
+    if(num <= 1) return 2;
+    if(num == 2) return 3;
     if(isPrime(num + 1)) {
         return num + 1;
     }
