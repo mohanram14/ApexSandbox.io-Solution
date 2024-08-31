@@ -1,0 +1,13 @@
+public Integer fibonacci(Integer n) {
+    if(n == 1 || n == 2) return 1
+    Integer p = 0;
+    Integer q = 1;
+    Int fib = 0;
+    for(Integer i = 0; i < n; i++) {
+        fib = fib + p + q;
+        Integer x = p + q;
+        p = q;
+        q = x;
+    }
+    return fib;
+}
