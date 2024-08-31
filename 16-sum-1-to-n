@@ -1,8 +1,7 @@
 public Integer sumToN(Integer n) {
-    Integer i = 1, k = 0;
-    while(i != n) {
-        k = k + i;
-        i += 1;
+    Integer i = 1, k = 1;
+    for(i = 1; i <= n; i++) {
+        k += i;
     }
     return k;
 }
