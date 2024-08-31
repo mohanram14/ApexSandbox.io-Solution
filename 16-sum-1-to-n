@@ -1,0 +1,8 @@
+public Integer sumToN(Integer n) {
+    Integer i, k = 1;
+    while(i != n) {
+        k = k + i;
+        i += 1;
+    }
+    return k;
+}
