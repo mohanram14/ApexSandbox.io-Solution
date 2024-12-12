@@ -1,0 +1,4 @@
+public List<Account> getAccountsFromJSONString(String inputJSON){
+    if(inputJSON == null || inputJSON.isEMpty())  return null;
+    return JSON.deserialize(inputJSON);
+}
