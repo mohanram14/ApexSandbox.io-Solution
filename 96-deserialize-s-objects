@@ -1,4 +1,4 @@
 public List<Account> getAccountsFromJSONString(String inputJSON){
     if(inputJSON == null || inputJSON.isEMpty())  return null;
-    return JSON.deserialize(inputJSON);
+    system.debug(JSON.deserialize(inputJSON));
 }
